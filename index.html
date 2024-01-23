@@ -26,7 +26,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "primary-color": "#FF4240",
+              "button-primary-color": "#FF4240",
+              "text-primary-color": "rgba(19, 19, 24, 0.60)",
+              "text-secondary-color": "rgba(255, 255, 255, 0.60)",
             },
           },
         },
@@ -40,11 +42,12 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header>
-      <nav class="navbar bg-base-100">
+    <header class="md:container md:mx-auto">
+      <!-- navigation start -->
+      <nav class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -67,7 +70,7 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Pages</a></li>
-              <li><a href="#">Blod</a></li>
+              <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
@@ -76,8 +79,8 @@
           /></a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="#">Home</a></li>
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a href="#" class="hover:text-[#FF4240]">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Pages</a></li>
             <li><a href="#">Blod</a></li>
@@ -85,7 +88,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
+          <button class="btn btn-ghost btn-circle hidden md:block lg:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -101,11 +104,237 @@
               />
             </svg>
           </button>
-          <a class="btn bg-primary-color text-white">Get Ticket</a>
+          <a class="btn bg-button-primary-color text-white text-xl"
+            >Get Ticket</a
+          >
         </div>
       </nav>
+      <!-- navigation end -->
+      <!-- slider-carosel start -->
+      <div class="carousel w-full">
+        <!-- slide-1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="flex flex-col md:flex-row">
+            <div
+              class="absolute flex justify-between lg:transform -translate-y-1/2 left-5 right-auto top-3/4"
+            >
+              <a href="#slide4" class="btn btn-circle bg-black text-white mx-4"
+                >❮</a
+              >
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+            <div
+              class="absolute transform -translate-y-1/2 right-5 top-3/4 bg-[#131318] lg:p-8 lg:w-[500px] space-y-4 rounded-xl mt-20 lg:mt-0"
+            >
+              <h3 class="text-2xl text-white font-extrabold">
+                Meet all the heroes from the field
+              </h3>
+              <p class="text-text-secondary-color text-base">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- slide-2 -->
+        <div id="slide2" class="carousel-item relative w-full rounded-2xl">
+          <img src="Images/1.1.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-auto top-3/4"
+          >
+            <a href="#slide1" class="btn btn-circle mx-4">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide-3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/1.2.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-auto top-3/4"
+          >
+            <a href="#slide2" class="btn btn-circle mx-4">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide-4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/1.3.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-auto top-3/4"
+          >
+            <a href="#slide3" class="btn btn-circle mx-4">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide-5 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/1.3.jpg" class="w-full rounded-2xl" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-auto top-3/4"
+          >
+            <a href="#slide3" class="btn btn-circle mx-4">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider-carosel end -->
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="md:container md:mx-auto">
+      <!-- professional-club start -->
+      <section class="text-center my-10">
+        <div class="space-y-4 mb-8">
+          <h3 class="text-4xl font-extrabold">Professional Hockeys Club</h3>
+          <p class="font-medium text-text-primary-color">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- item-1 -->
+          <div class="mb-4 md:mb-0">
+            <div
+              class="radial-progress text-[#FF4240] mb-4"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="text-black"> 87%</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#131318] font-semibold text-xl">
+                Prayer Facility
+              </h3>
+              <p class="text-base font-normal">
+                Amet consectetur. Condimentum dignissim adipiscing .
+              </p>
+            </div>
+          </div>
+          <!-- item-2 -->
+          <div class="mb-4 md:mb-0">
+            <div
+              class="radial-progress text-[#49D293] mb-4"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="text-black">95%</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#131318] font-semibold text-xl">
+                Experienced Coach
+              </h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <!-- item-3 -->
+          <div class="mb-4 md:mb-0">
+            <div
+              class="radial-progress text-[#FFB546] mb-4"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="text-black"> 90%</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#131318] font-semibold text-xl">
+                Senior Player
+              </h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+          <!-- item-4 -->
+          <div class="mb-4 md:mb-0">
+            <div
+              class="radial-progress text-[#4C8DF1] mb-4"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="text-black">80%</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#131318] font-semibold text-xl">
+                Training Ground
+              </h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- professional-club end -->
+
+      <!-- Program Section start -->
+      <section class="my-8">
+        <div class="space-y-4 mb-8 text-center">
+          <h3 class="text-4xl font-extrabold">Program Sections</h3>
+          <p class="font-medium text-text-primary-color">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- first-card -->
+          <div class="card image-full">
+            <figure>
+              <img src="Images/2.png" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- second-card -->
+          <div class="card image-full">
+            <figure>
+              <img src="Images/3.png" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- third-card -->
+          <div class="card image-full col-span-2">
+            <img src="Images/4.png" />
+
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Program Section end -->
+      <!-- new product section start -->
+      <section class="my-8">
+        <div class="space-y-4 mb-8 text-center">
+          <h3 class="text-4xl font-extrabold">Program Sections</h3>
+          <p class="font-medium text-text-primary-color">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="">
+          <!-- product-1 -->
+          <div class="">
+            <div class="">
+              <img src="Images/5.png" alt="" />
+            </div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- new product section end -->
+    </main>
+    <footer class="md:container md:mx-auto"></footer>
   </body>
 </html>
