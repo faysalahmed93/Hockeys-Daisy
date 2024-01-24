@@ -37,6 +37,10 @@
               "button-primary-color": "#FF4240",
               "text-primary-color": "rgba(19, 19, 24, 0.60)",
               "text-secondary-color": "rgba(255, 255, 255, 0.60)",
+              "phone-background": " rgba(188, 237, 109, 0.10)",
+              "email-background": " rgba(253, 221, 95, 0.10)",
+              "location-background": " rgba(98, 156, 243, 0.10)",
+              "social-background": " rgba(19, 19, 24, 0.03)",
             },
           },
         },
@@ -399,7 +403,7 @@
                 <p class="font-extrabold text-lg text-button-primary-color">
                   Price - $22.00
                 </p>
-                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                <div class="flex flex-row items-center gap-4">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Delivery Fee : Free</p>
                 </div>
@@ -439,7 +443,7 @@
                 <p class="font-extrabold text-lg text-button-primary-color">
                   Price - $22.00
                 </p>
-                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                <div class="flex flex-row items-center gap-4">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Delivery Fee : Free</p>
                 </div>
@@ -479,7 +483,7 @@
                 <p class="font-extrabold text-lg text-button-primary-color">
                   Price - $22.00
                 </p>
-                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                <div class="flex flex-row items-center gap-4">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Delivery Fee : Free</p>
                 </div>
@@ -519,7 +523,7 @@
                 <p class="font-extrabold text-lg text-button-primary-color">
                   Price - $22.00
                 </p>
-                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                <div class="flex flex-row items-center gap-4">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Delivery Fee : Free</p>
                 </div>
@@ -559,7 +563,7 @@
                 <p class="font-extrabold text-lg text-button-primary-color">
                   Price - $22.00
                 </p>
-                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-4">
+                <div class="flex flex-row items-center gap-4">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Delivery Fee : Free</p>
                 </div>
@@ -571,7 +575,7 @@
       </section>
       <!-- new product section end -->
       <!-- client question start -->
-      <section class="my-4">
+      <section class="my-8">
         <div class="space-y-6 mb-8 text-center border-dotted border-y-2 p-12">
           <h3 class="text-4xl font-extrabold">Clients Question</h3>
           <p class="font-medium text-text-primary-color">
@@ -579,11 +583,11 @@
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 p-4 lg:p-0 lg:gap-4">
           <div class="">
-            <img src="Images/11.png" alt="" class="w-full h-auto" />
+            <img src="Images/11.png" alt="" class="w-full h lg:h-[470px]" />
           </div>
-          <div class="">
+          <div class="space-y-4">
             <div class="collapse collapse-plus">
               <input type="radio" name="my-accordion-3" checked="checked" />
               <div class="collapse-title text-xl font-medium">
@@ -636,6 +640,108 @@
         </div>
       </section>
       <!-- client question end -->
+      <!-- get in touch section start -->
+      <section class="my-8">
+        <div class="space-y-6 mb-8 text-center border-dotted border-y-2 p-12">
+          <h3 class="text-4xl font-extrabold">Get In Touch</h3>
+          <p class="font-medium text-text-primary-color">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div
+            class="flex col-span-1 flex-col items-center border-2 rounded-lg p-12 gap-4"
+          >
+            <div class="p-6 h-[216px] w-[374px] bg-phone-background rounded-lg">
+              <img src="Images/Group 1171275317.png" alt="" />
+              <p>Phone Number :</p>
+              <h3 class="text-lg font-bold">(+62) 123-321-543</h3>
+            </div>
+            <div class="p-6 bg-email-background rounded-lg h-[216px] w-[374px]">
+              <img src="Images/Group 1171275318.png" alt="" />
+              <p>Email :</p>
+              <h3 class="text-lg font-bold">hockeys@support.com</h3>
+            </div>
+            <div
+              class="p-6 bg-location-background rounded-lg h-[216px] w-[374px]"
+            >
+              <img src="Images/Group 1171275321.png" alt="" />
+              <p>Location :</p>
+              <h3 class="text-lg font-bold">152/1 Mohakhali Wireless Gate</h3>
+            </div>
+          </div>
+          <!-- input -->
+          <div class="col-span-2 space-y-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 gap-4">
+                <label for="" class="text-xl font-bold">Your Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  class="input input-bordered w-full"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-4">
+                <label for="" class="text-xl font-bold">Your Email</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 gap-4">
+                <label for="" class="text-xl font-bold">Subject</label>
+                <input
+                  type="text"
+                  placeholder="Enter your subject"
+                  class="input input-bordered w-full"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-4">
+                <label for="" class="text-xl font-bold">Phone Number</label>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full"
+                />
+              </div>
+            </div>
+            <div class="">
+              <div class="grid grid-cols-1 gap-4">
+                <label for="" class="text-xl font-bold">Message</label>
+                <textarea
+                  class="textarea textarea-bordered"
+                  rows="16"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+              <div class="grid grid-cols-1 mt-4">
+                <button class="btn bg-[#FF4240] text-white">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get in touch section end -->
+
+      <!-- social media -->
+      <section
+        class="text-center p-6 mt-4 mb-8 bg-social-background rounded-2xl space-y-4"
+      >
+        <h3 class="text-2xl font-extrabold">Social Media</h3>
+        <div class="flex flex-row gap-4 justify-center">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </section>
+      <!-- social media -->
     </main>
     <footer class="md:container md:mx-auto"></footer>
   </body>
